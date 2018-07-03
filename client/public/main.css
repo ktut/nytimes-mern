@@ -1,0 +1,111 @@
+html {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-family: 'Libre Franklin', sans-serif;
+    margin-bottom: 15px;
+}
+
+div,
+label,
+input,
+button {
+    font-family: 'Libre Baskerville', serif;
+}
+
+button {
+    padding: 3px 5px;
+}
+
+.article button {
+    margin-left: 10px;
+}
+
+.nyt-top {
+    background: url('./nyt-back2.png');
+    padding: 60px 10px;
+    text-align: center;
+}
+.nyt-top h1,
+.nyt-top p {
+    max-width: 800px;
+    color: white;
+    margin: 0 auto;
+    padding: 10px;
+    background: rgba(0,0,0,0.8);
+}
+
+.nyt-top h1 {
+    padding-top: 20px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.nyt-top p {
+    padding-bottom: 20px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.nyt-columns {
+    display: flex;
+}
+
+.nyt-search,
+.nyt-results,
+.nyt-saved {
+    padding: 25px;
+}
+
+.nyt-search {
+    border-top-right-radius: 50px;
+    flex: 0 0 200px;
+    background: rgba(0,0,0,0.8);
+    color: white !important;
+}
+
+.nyt-search label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.nyt-search input {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.nyt-results,
+.nyt-saved {
+    flex: 1 1 50%;
+}
+
+.article {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.article > a {
+    flex-basis: 100%;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+    .nyt-columns {
+        flex-direction: column;
+    }
+
+    .nyt-search {
+        border-radius: 0;
+    }
+}
